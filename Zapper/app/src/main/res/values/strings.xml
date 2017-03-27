@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Zapper</string>
-    <string name="action_settings">Settings</string>
 
     <string name="home_title">Zapper\u0027s content</string>
 
+    <string name="loading">Loading...</string>
+    <string name="check_internet_connection">Please, Check Internet Connection!</string>
+    <string name="ok">OK</string>
+    <string name="lets_go">Let\u0027s Go</string>
+    <string name="hint">HINT\n\nThe Application fetching data every 20 second also you have button refresh.\n\nChanging orientation makes fetch for all contact and fetch for details contact depends on orientation.</string>
 </resources>

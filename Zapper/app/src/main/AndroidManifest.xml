@@ -2,18 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zapper">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".ApplicationClass"
-        >
-        <activity
-            android:name=".view.activates.SplashActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".view.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,12 +23,20 @@
         </activity>
 
         <activity
-            android:name=".view.activates.FragmentLayout"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/home_title">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:name=".view.GetStartedActivity"
+            android:screenOrientation="sensor"/>
+        <activity
+            android:label="@string/home_title"
+            android:theme="@style/AppTheme.visible"
+            android:name=".view.HomeActivity"
+            android:screenOrientation="sensor"/>
 
-        <activity android:name=".view.activates.FragmentLayout$DetailsActivity" />
+        <activity
+            android:label="@string/home_title"
+            android:theme="@style/AppTheme.visible"
+            android:name=".view.DetailsActivity"
+            android:screenOrientation="sensor"/>
 
     </application>
 

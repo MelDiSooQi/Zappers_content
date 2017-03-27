@@ -2,14 +2,7 @@
 <resources>
     <color name="colorPrimary">#407dcc</color>
     <color name="colorPrimaryDark">#2a64af</color>
-    <color name="colorAccent">#999999</color>
-
-
-    <color name="blueLevel_1">#2a64af</color>
-    <color name="blueLevel_2">#7bbdcd</color>
-
-    <color name="darkGold">#9f854e</color>
-    <color name="mostdarkGold">#645331</color>
-    <color name="darkerGold">#836d40</color>
-
+    <color name="colorAccent">#c1c1c1</color>
+    <color name="white">#7cffffff</color>
+    <color name="red">#af2a2e</color>
 </resources>

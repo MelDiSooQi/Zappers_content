@@ -10,19 +10,8 @@ import java.util.Observable;
 /**
  * Created by MelDiSooQi on 5/17/2016.
  */
-public class AnimationHandler extends Observable {
-
-    public static void layerAnimation(final Activity activity, final View view, final int animation)
-    {
-        activity.runOnUiThread(new Runnable()
-        {
-            public void run()
-            {
-                view.startAnimation(AnimationUtils.loadAnimation(activity, animation));
-            }
-        });
-    }
-
+public class AnimationHandler extends Observable
+{
     public void layerAnimationWithListener(final Activity activity, final View view, final int animation)
     {
         activity.runOnUiThread(new Runnable()
@@ -36,14 +25,10 @@ public class AnimationHandler extends Observable {
                 {
                     @Override
                     public void onAnimationStart(Animation animation) {
-                        //setChanged();
-                        //notifyObservers("onAnimationStart");
                     }
 
                     @Override
                     public void onAnimationRepeat(Animation animation) {
-                        //setChanged();
-                        //notifyObservers("onAnimationRepeat");
                     }
 
                     @Override
