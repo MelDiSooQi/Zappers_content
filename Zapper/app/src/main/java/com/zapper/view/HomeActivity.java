@@ -471,9 +471,6 @@ public class HomeActivity extends AppCompatActivity {
 			text.setTextSize(16);
 			scroller.addView(text);
 
-
-//			text.setText(Shakespeare.DIALOGUE[getShownIndex()]);
-
 			Spanned spanned = Html.fromHtml("<font color='#2a64b0'><b>"
 					+getString(R.string.loading)+"</b></font>");
 			text.setText(spanned);
