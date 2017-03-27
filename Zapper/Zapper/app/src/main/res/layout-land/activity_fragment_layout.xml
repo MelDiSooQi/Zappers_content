@@ -1,0 +1,64 @@
+<!--
+ Top-level content view for the layout fragment sample.  This version is
+     for display when in landscape: we can fit both titles and dialog.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:visibility="gone"/>
+
+        <fragment
+            android:layout_below="@id/toolbar"
+            android:id="@+id/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            class="com.zapper.view.HomeActivity$TitlesFragment"
+            android:layout_toLeftOf="@+id/invisibleLayer"
+            android:layout_toStartOf="@+id/invisibleLayer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackground"/>
+<TextView
+    android:id="@+id/invisibleLayer"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_centerInParent="true"/>
+        <FrameLayout
+            android:id="@+id/details"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/detailsElementBackground"
+            android:layout_below="@id/toolbar"
+            android:layout_toRightOf="@+id/invisibleLayer"
+            android:layout_toEndOf="@+id/invisibleLayer"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/refresh" />
+
+    </RelativeLayout>
+
+</LinearLayout>
