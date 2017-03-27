@@ -2,7 +2,7 @@
 Zapper Display Data
 
 
-<img src="Images/1.png" style="position:absolute; width:40%; height:40%" align="center" />
+<img src="Images/1.png" width=100% height=100% align="center" />
 <img src="Images/2.png" align="center" />
 <img src="Images/3.png" align="center" />
 <img src="Images/4.png" align="center" />
